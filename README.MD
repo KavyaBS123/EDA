@@ -11,6 +11,29 @@ This project performs Exploratory Data Analysis (EDA) on datasets related to var
 
 The goal is to understand the data, uncover patterns, and gain insights into machine operations and performance.
 
+## Data Description
+
+Each dataset contains records of machine operations, sensor readings, and process parameters. Typical columns include:
+- **Timestamp**: Date and time of the recorded operation or reading.
+- **Machine ID**: Unique identifier for each machine.
+- **Operator ID**: Identifier for the operator running the machine.
+- **Cycle Time**: Duration of each operation cycle.
+- **Temperature**: Sensor readings for machine or material temperature.
+- **Pressure**: Hydraulic or pneumatic pressure values.
+- **Speed/RPM**: Rotational speed or movement speed of machine components.
+- **Material Type**: Type of material processed (e.g., metal, plastic).
+- **Defect Count**: Number of defects detected per cycle or batch.
+- **Energy Consumption**: Power usage during operation.
+- **Status/Alarm Codes**: Machine status or error codes for diagnostics.
+
+Each machine type may have additional specific columns:
+- **Bending Angle** (Bending Machine)
+- **Tool Path Coordinates** (CNC Machine)
+- **Mould Temperature** (Injection Moulding)
+- **Press Force** (Hydraulic Press)
+- **Spindle Load** (VMC)
+
+These features help in analyzing machine efficiency, identifying bottlenecks, and predicting maintenance needs.
 ## Project Structure
 
 - `BENDINGMACHINE.ipynb`: EDA for Bending Machine dataset
@@ -68,4 +91,5 @@ The goal is to understand the data, uncover patterns, and gain insights into mac
 
 - Python 3.x
 - pandas, numpy, matplotlib, seaborn (install via pip if needed)
+
 
